@@ -4,7 +4,12 @@
 */
 
 :root {
-    --border: 2px white solid;
+    --border: 1px solid #ddd;
+    --margin: 20px;
+    --padding: 10px;
+    --border-radius: 10px;
+    --test-border: 2px solid black;
+    --theme: rgb(236, 155, 56);
 }
 
 
@@ -15,10 +20,17 @@
     font-family: Arial, sans-serif;
 }
 
+html, body {
+    margin: 0;
+    min-height: 100vh;
+}
+
 body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* navbar */
 
 header {
     background-color: #333;
@@ -32,15 +44,11 @@ nav a {
     /* border: 2px white solid; */
 }
 
-main {
-    padding: 2rem;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
-    border: solid 2px solid;
     justify-items: center;
+    background-color: var(--theme);
 }
 
 .login-button {
@@ -53,8 +61,88 @@ nav img {
     margin-left: 20px;
 }
 
+/* main */
+
+main {
+    padding: 2rem;
+    /* border: var(--test-border); */
+    min-height: 92vh;
+}
+
 #filter {
     /* border: var(--border); */
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
+
+h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#country-filter {
+    width: 8%;
+    margin-left: 0.6%;
+    /* border: var(--border); */
+}
+
+.place-card {
+    margin: var(--margin);
+    padding: var(--padding);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: 2px 2px 4px 4px hsla(235, 90%, 10%, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 20%; */
+}
+
+#places-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* border: var(--test-border); */
+}
+
+.card-content {
+    /* border: var(--test-border); */
+    text-align: center;
+    margin: 3%;
+}
+
+.card-button {
+    /* border: var(--test-border); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+
+.view-button {
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    background-color: var(--theme);
+    padding: var(--padding);
+    width: 50%;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--theme);
+    color: #fff;
+    /* border: var(--test-border); */
+    min-height: 8vh;
+    padding: 20px;
+}
+
+/* .footer-text {
+    border: var(--test-border);
+    position: relative;
+    bottom: ;
+} */

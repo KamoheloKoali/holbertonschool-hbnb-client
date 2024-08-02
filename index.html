@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="HBNB is a digital market place for housing">
+        <link rel="icon" type="image/x-icon" href="./icon.png">
     <title>List of Places</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img src="./logo.png">
+            <a href="index.html"><img src="./logo.png"></a>
             <a href="login.html" id="login-link" class="login-button">Login</a>
         </nav>
     </header>
     <main>
+        <h1>Available Places</h1>
         <section id="filter">
             <label for="country-filter">Filter by Country:</label>
             <select id="country-filter">
@@ -22,8 +25,35 @@
         </section>
         <section id="places-list">
             <!-- List of places will be populated dynamically -->
+             <div class="place-card">
+                <div class="card-content"><h1>Beatiful Beach House</h1></div>
+                <div class="card-content">Price per night: $150</div>
+                <div class="card-content">Location: Los Angeles, United States</div>
+                <div class="card-content">
+                <button class="view-button">View Details</button>
+            </div>
+             </div>
+             <div class="place-card">
+                <div class="card-content"><h1>Beatiful Beach House</h1></div>
+                <div class="card-content">Price per night: $150</div>
+                <div class="card-content">Location: Los Angeles, United States</div>
+                <div class="card-content">
+                    <button class="view-button">View Details</button>
+                </div>
+             </div>
+             <div class="place-card">
+                <div class="card-content"><h1>Beatiful Beach House</h1></div>
+                <div class="card-content">Price per night: $150</div>
+                <div class="card-content">Location: Los Angeles, United States</div>
+                <div class="card-button">
+                    <button class="view-button">View Details</button>
+                </div>
+             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-text">&copy 2024 HBNB Evolution. All rights reserved</div>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
