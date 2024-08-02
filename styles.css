@@ -107,7 +107,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* max-width: 20%; */
 }
 
 #places-list {
@@ -123,13 +122,13 @@ h1 {
     margin: 3%;
 }
 
-.card-button {
-    /* border: var(--test-border); */
+/* .card-button {
+    border: var(--test-border);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 3%;
-}
+} */
 
 .view-button {
     border-radius: 5px;
@@ -166,3 +165,78 @@ footer {
     position: relative;
     bottom: ;
 } */
+
+/* place.html */
+
+.place {
+    display: flex;
+    justify-content: center;
+    /* border: var(--test-border); */
+}
+
+.encapsulate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: inherit;
+    width: 60%;
+    /* border: var(--test-border); */
+}
+
+#place-details {
+    margin: var(--margin);
+    padding: var(--padding);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: var(--test-border); */
+}
+
+.card-content-place {
+    /* border: var(--test-border); */
+    text-align: center;
+    margin: 2%;
+}
+
+.card-content-place span {
+    font-weight: bold;
+}
+
+#add-review {
+    /* border: var(--test-border); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#add-review h2 {
+    text-align: center;
+}
+
+#review-form {
+    /* border: var(--test-border); */
+    display: flex;
+    flex-direction: column;
+}
+
+#review-form label {
+    font-weight: bold;
+}
+
+#review-text {
+    /* height: auto; */
+    max-width: 100%;
+    border: var(--border);
+    border-radius: 8px;
+}
+
+#review-form-capsule {
+    /* border: var(--test-border); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 100%; */
+}
