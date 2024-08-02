@@ -3,6 +3,11 @@
   You'll probably need to override some of theese styles.
 */
 
+:root {
+    --border: 2px white solid;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,15 +23,38 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin-left: 1rem;
+    /* border: 2px white solid; */
 }
 
 main {
     padding: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px solid;
+    justify-items: center;
+}
+
+.login-button {
+    padding: 20px 10px;
+    margin-right: 20px;
+    /* border: var(--border); */
+}
+
+nav img {
+    margin-left: 20px;
+}
+
+#filter {
+    /* border: var(--border); */
+    display: flex;
+    justify-content: center;
 }
