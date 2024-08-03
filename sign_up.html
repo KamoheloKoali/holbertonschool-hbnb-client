@@ -14,22 +14,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./login_style.css" />
+    
   </head>
   <body>
     <!-- partial:index.partial.html -->
     <body class="align">
       <div class="grid">
         <form
-          action="https://httpbin.org/post"
-          method="POST"
           class="form login"
+          id="login-form"
         >
         <div class="form__field">
-            <label for="login__username"
+          <label for="first-name"
+            ><span class="hidden">First Name</span></label
+          >
+          <input
+            id="first-name"
+            type="text"
+            name="firstName"
+            class="form__input"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label for="last-name"
+            ><span class="hidden">Last Name</span></label
+          >
+          <input
+            id="last-name"
+            type="text"
+            name="lastName"
+            class="form__input"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="form__field">
+            <label for="email"
               ><span class="hidden">Email</span></label
             >
             <input
-              id="login__username"
+              id="email"
               type="text"
               name="email"
               class="form__input"
@@ -37,19 +63,7 @@
               required
             />
           </div>
-          <div class="form__field">
-            <label for="login__username"
-              ><span class="hidden">Username</span></label
-            >
-            <input
-              id="login__username"
-              type="text"
-              name="username"
-              class="form__input"
-              placeholder="Username"
-              required
-            />
-          </div>
+          
 
           <div class="form__field">
             <label for="login__password"
@@ -71,13 +85,13 @@
         </form>
 
         <p class="text--center">
-          Already have an account? <a href="sign_up.html">Log in</a>
-          <svg class="icon">
+          Already have an account? <a href="login.html">Log in</a>
+          <!-- <svg class="icon">
             <use
               xmlns:xlink="http://www.w3.org/1999/xlink"
               xlink:href="assets/images/icons.svg#arrow-right"
             ></use>
-          </svg>
+          </svg> -->
         </p>
       </div>
 
@@ -100,5 +114,6 @@
       </svg>
     </body>
     <!-- partial -->
+    <script src="signUp.js"></script>
   </body>
 </html>
