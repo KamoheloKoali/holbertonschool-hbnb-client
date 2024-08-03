@@ -93,7 +93,8 @@ h1 {
 #country-filter {
   width: 8%;
   margin-left: 0.6%;
-  /* border: var(--border); */
+  min-width: 8%;
+  /* border: var(--test-border); */
   cursor: pointer;
 }
 
@@ -111,6 +112,7 @@ h1 {
 #places-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap-reverse;
   margin-top: 10px;
   /* border: var(--test-border); */
 }
