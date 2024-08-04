@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loginUser(email, password) {
     try {
-        const response = await fetch('https://zcck56hn-5000.inc1.devtunnels.ms/login', {
+        const response = await fetch('https://ubiquitous-cod-977jwrpg7j5jfxxw7-5000.app.github.dev/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -7,8 +7,9 @@
       name="description"
       content="HBNB is a digital market place for housing"
     />
+    <script src="scripts.js"></script>
     <link rel="icon" type="image/x-icon" href="./icon.png" />
-    <title>List of Places</title>
+    <title>HBNB Lesotho</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,7 +20,7 @@
       </nav>
     </header>
     <main>
-      <h1>Available Places</h1>
+      <h1 id="places-header">Available Places</h1>
       <section id="filter">
         <label for="country-filter">Filter by Country:</label>
         <select id="country-filter">
@@ -29,6 +30,7 @@
       </section>
       <section id="places-list">
         <!-- List of places will be populated dynamically -->
+         <h3>Loading...</h3>
       </section>
     </main>
     <footer>
@@ -36,6 +38,5 @@
         &copy 2024 HBNB Evolution. All rights reserved
       </div>
     </footer>
-    <script src="scripts.js"></script>
   </body>
 </html>

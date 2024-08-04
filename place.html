@@ -7,6 +7,7 @@
       name="description"
       content="HBNB is a digital market place for housing"
     />
+    <script src="scripts.js"></script>
     <link rel="icon" type="image/x-icon" href="./icon.png" />
     <title>Place Details</title>
     <link rel="stylesheet" href="styles.css" />
@@ -20,42 +21,28 @@
     </header>
     <main class="place">
       <div class="encapsulate">
-        <div class="card-content-place"><h1>Beatiful Beach House</h1></div>
+        <div class="card-content-place" id="heading"></div>
         <section id="place-details">
           <!-- Place details will be populated dynamically -->
-          <div class="card-content-place"><span>Host</span>: Kamohelo</div>
-          <div class="card-content-place">
-            <span>Price per night:</span> $150
-          </div>
-          <div class="card-content-place">
-            <span>Location:</span> Los Angeles, United States
-          </div>
-          <div class="card-content-place">
-            <span>Description:</span> description
-          </div>
-          <div class="card-content-place"><span>Rating:</span> "stars"</div>
+           <h3>Loading...</h3>
         </section>
         <section id="reviews">
           <!-- Reviews will be populated dynamically -->
-          <div class="place-card-review">
-            <div class="card-content-review"><span>Jane Smith:</span></div>
-            <div class="card-content-review">Jane Smith's review</div>
-            <div class="card-content-review">Rating: "stars"</div>
-          </div>
-
-          <div class="place-card-review">
-            <div class="card-content-review"><span>Jane Smith:</span></div>
-            <div class="card-content-review">Jane Smith's review</div>
-            <div class="card-content-review">Rating: "stars"</div>
-          </div>
         </section>
         <section id="add-review">
           <h2>Add a Review</h2>
           <div id="review-form-capsule">
             <form id="review-form">
               <label for="review-text">Your Review:</label>
-              <textarea id="review-text" name="review-text" required></textarea>
-
+              <textarea id="review-text" name="review-text" required style="height: auto"></textarea>
+                <label for="rating">Rating:</label>
+                <select id="rating">
+                  <option value="1 star">1 star</option>
+                  <option value="2 star">2 star</option>
+                  <option value="3 star">3 star</option>
+                  <option value="4 star">4 star</option>
+                  <option value="5 star">5 star</option>
+                </select>
               <button id="submit-button" type="submit">Submit</button>
             </form>
           </div>
@@ -67,6 +54,5 @@
         &copy 2024 HBNB Evolution. All rights reserved
       </div>
     </footer>
-    <script src="scripts.js"></script>
   </body>
 </html>

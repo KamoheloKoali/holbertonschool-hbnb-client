@@ -79,10 +79,15 @@ main {
 }
 
 #filter {
-  /* border: var(--border); */
+  /* border: var(--test-border); */
   display: flex;
   justify-content: center;
   font-weight: bold;
+  visibility: hidden;
+}
+
+#places-header {
+  visibility: hidden;
 }
 
 h1 {
@@ -91,11 +96,11 @@ h1 {
 }
 
 #country-filter {
-  width: 8%;
+  width: 20%;
   margin-left: 0.6%;
-  min-width: 8%;
   /* border: var(--test-border); */
   cursor: pointer;
+  flex-grow: .1;
 }
 
 .place-card {
@@ -107,6 +112,10 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* flex-shrink: 10; */
+  flex-grow: .9;
+  min-width: 30%;
+  max-width: 20rem;
 }
 
 #places-list {
@@ -179,8 +188,9 @@ footer {
   justify-content: center;
   flex-direction: column;
   height: inherit;
-  width: 60%;
+  /* width: 60%; */
   /* border: var(--test-border); */
+  flex-grow: .3;
 }
 
 #place-details {
@@ -229,6 +239,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* visibility: hidden; */
 }
 
 #add-review h2 {
@@ -250,6 +261,14 @@ footer {
   max-width: 100%;
   border: var(--border);
   border-radius: 8px;
+  margin: 5px;
+}
+
+#rating {
+  height: 20%;
+  max-width: 100%;
+  border: var(--border);
+  border-radius: 3px;
   margin: 5px;
 }
 
@@ -278,6 +297,5 @@ footer {
   box-shadow: var(--shadow);
   width: 53%;
 }
-
 
 /* login */
